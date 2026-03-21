@@ -45,7 +45,7 @@ export type Category =
 
 export type BudgetTier = 'budget' | 'mid-range' | 'premium' | 'luxury'
 
-export type RatingValue = 1 | 1.5 | 2 | 2.5 | 3 | 3.5 | 4 | 4.5 | 5
+export type RatingValue = number
 
 // ─── Affiliate Link ───────────────────────────────────────────────────────────
 
