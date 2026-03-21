@@ -205,7 +205,7 @@ export function chunk<T>(array: T[], size: number): T[][] {
 }
 
 export function unique<T>(array: T[], key?: keyof T): T[] {
-  if (!key) return [...new Set(array)]
+  if (!key) return Array.from(new Set(array))
   const seen = new Set()
   return array.filter(item => {
     const k = item[key]
