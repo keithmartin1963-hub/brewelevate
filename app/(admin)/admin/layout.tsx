@@ -70,11 +70,6 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                   >
                     <Icon size={14} strokeWidth={1.75} className={cn('flex-shrink-0', active ? 'opacity-100' : 'opacity-70')} />
                     <span className="flex-1">{item.label}</span>
-                    {item.badge && (
-                      <span className="bg-gold-400 text-espresso text-[9px] font-bold px-1.5 py-0.5 rounded-full leading-none">
-                        {item.badge}
-                      </span>
-                    )}
                   </Link>
                 )
               })}
