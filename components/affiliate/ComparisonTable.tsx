@@ -122,7 +122,7 @@ export function ComparisonTable({
               </td>
 
               {products.map((product) => {
-                const raw   = (product as Record<string, unknown>)[row.key]
+                const raw   = (product as any)[row.key]
                 const value = row.render ? row.render(raw, product) : raw
                 const isHighlighted = product.id === highlightBest
 
