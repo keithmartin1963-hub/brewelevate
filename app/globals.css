@@ -169,7 +169,7 @@
   .btn-gold {
     @apply btn px-6 py-3
            text-espresso font-semibold
-           shadow-gold hover:shadow-gold-lg
+           shadow-lg hover:shadow-xl;
            active:scale-[0.98];
     background: linear-gradient(135deg, #C9A84C 0%, #E3BB55 50%, #C9A84C 100%);
     background-size: 200% auto;
