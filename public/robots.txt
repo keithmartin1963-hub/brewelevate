@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block admin
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemaps
+Sitemap: https://brewelevate.com/sitemap.xml

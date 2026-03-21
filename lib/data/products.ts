@@ -1,0 +1,337 @@
+import type { Product } from '@/lib/types'
+
+export const products: Product[] = [
+  {
+    id: 'breville-barista-express',
+    slug: 'breville-barista-express',
+    name: 'Barista Express',
+    brand: 'Breville',
+    category: 'espresso-machines',
+    tagline: 'Best all-in-one for most home baristas',
+    description:
+      'Built-in conical burr grinder meets 9-bar extraction in one cohesive machine. The most popular path from pod coffee to real espresso.',
+    image: 'https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=600&q=80',
+    images: [],
+    budgetTier: 'premium',
+    price: '$799',
+    rating: 4.5,
+    reviewCount: 12400,
+    specs: [
+      { label: 'Boiler',        value: 'Single thermocoil' },
+      { label: 'Grinder',       value: 'Conical burr (built-in)' },
+      { label: 'Pressure',      value: '9 bar' },
+      { label: 'Steam Wand',    value: 'Manual' },
+      { label: 'Water Tank',    value: '67 oz' },
+      { label: 'Dimensions',    value: '13.2 × 12.5 × 15.8 in' },
+    ],
+    pros: [
+      'Built-in grinder saves counter space',
+      'Consistent 9-bar extraction',
+      'Excellent value for all-in-one',
+      'Active temperature control',
+    ],
+    cons: [
+      'Grinder not as precise as standalone',
+      'Large footprint',
+      'Learning curve for beginners',
+    ],
+    affiliateLinks: [
+      {
+        id: 'bbe-amazon',
+        productId: 'breville-barista-express',
+        retailer: 'amazon',
+        retailerName: 'Amazon',
+        url: 'https://www.amazon.com/dp/B06X9QXQX1',
+        trackingId: 'brewelevate-20',
+        displayPrice: '$799',
+        isPrimary: true,
+        isActive: true,
+        clicks: 0,
+        createdAt: '2024-01-01T00:00:00Z',
+        updatedAt: '2024-01-01T00:00:00Z',
+      },
+      {
+        id: 'bbe-breville',
+        productId: 'breville-barista-express',
+        retailer: 'brand',
+        retailerName: 'Breville',
+        url: 'https://www.breville.com/us/en/products/espresso/bes870.html',
+        displayPrice: '$799',
+        isPrimary: false,
+        isActive: true,
+        clicks: 0,
+        createdAt: '2024-01-01T00:00:00Z',
+        updatedAt: '2024-01-01T00:00:00Z',
+      },
+    ],
+    isFeatured: true,
+    isTopPick: true,
+    tags: ['espresso', 'all-in-one', 'grinder-included', 'best-seller'],
+    seo: {
+      title: 'Breville Barista Express Review — Best All-In-One Espresso Machine',
+      description:
+        'Full hands-on review of the Breville Barista Express. We tested shot quality, grind consistency, milk frothing, and long-term durability.',
+    },
+    createdAt: '2024-01-15T00:00:00Z',
+    updatedAt: '2024-11-01T00:00:00Z',
+  },
+
+  {
+    id: 'baratza-encore-esp',
+    slug: 'baratza-encore-esp',
+    name: 'Encore ESP',
+    brand: 'Baratza',
+    category: 'grinders',
+    tagline: 'Best entry-level burr grinder for espresso',
+    description:
+      'Upgraded Encore with espresso-optimised stepped adjustment. Reliable, consistent, and repairable — the grinder that lasts a decade.',
+    image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600&q=80',
+    images: [],
+    budgetTier: 'mid-range',
+    price: '$230',
+    rating: 4.3,
+    reviewCount: 4200,
+    specs: [
+      { label: 'Burrs',         value: '40mm conical' },
+      { label: 'Settings',      value: '40 stepped' },
+      { label: 'RPM',           value: '450 rpm (low heat)' },
+      { label: 'Hopper',        value: '8 oz capacity' },
+      { label: 'Motor',         value: 'DC gear reduction' },
+      { label: 'Weight',        value: '7.5 lbs' },
+    ],
+    pros: [
+      'Excellent grind consistency for price',
+      'Low RPM preserves flavor',
+      'Fully repairable — parts always available',
+      'Quiet for a burr grinder',
+    ],
+    cons: [
+      'Stepped settings (not stepless)',
+      'No built-in scale',
+      'Basic hopper design',
+    ],
+    affiliateLinks: [
+      {
+        id: 'baratza-amazon',
+        productId: 'baratza-encore-esp',
+        retailer: 'amazon',
+        retailerName: 'Amazon',
+        url: 'https://www.amazon.com/dp/B093QLXM9F',
+        trackingId: 'brewelevate-20',
+        displayPrice: '$230',
+        isPrimary: true,
+        isActive: true,
+        clicks: 0,
+        createdAt: '2024-01-01T00:00:00Z',
+        updatedAt: '2024-01-01T00:00:00Z',
+      },
+    ],
+    isFeatured: true,
+    isTopPick: true,
+    tags: ['grinder', 'burr', 'espresso', 'entry-level'],
+    seo: {
+      title: 'Baratza Encore ESP Review — Best Budget Espresso Grinder',
+      description:
+        'Is the Baratza Encore ESP worth it for espresso? We put it through 6 weeks of daily shots to find out.',
+    },
+    createdAt: '2024-02-01T00:00:00Z',
+    updatedAt: '2024-10-15T00:00:00Z',
+  },
+
+  {
+    id: 'fellow-stagg-ekg',
+    slug: 'fellow-stagg-ekg',
+    name: 'Stagg EKG',
+    brand: 'Fellow',
+    category: 'kettles',
+    tagline: 'The most beautiful precision kettle made',
+    description:
+      'Variable temperature, hold mode, and a pour spout so precise it changed how people think about pour-over. Design and function in equal measure.',
+    image: 'https://images.unsplash.com/photo-1607868894064-2b6e7ed1b324?w=600&q=80',
+    images: [],
+    budgetTier: 'premium',
+    price: '$165',
+    rating: 4.7,
+    reviewCount: 8100,
+    specs: [
+      { label: 'Capacity',      value: '0.9L' },
+      { label: 'Temp Range',    value: '135°F – 212°F' },
+      { label: 'Hold Mode',     value: '60 min' },
+      { label: 'Wattage',       value: '1200W' },
+      { label: 'Display',       value: 'LCD temperature' },
+      { label: 'Cord',          value: '360° swivel base' },
+    ],
+    pros: [
+      'Best-in-class pour control',
+      'Hold mode keeps temp exact',
+      'Stunning industrial design',
+      'Heats quickly for wattage',
+    ],
+    cons: [
+      'Premium price for a kettle',
+      'Smaller 0.9L capacity',
+      'Hand wash only',
+    ],
+    affiliateLinks: [
+      {
+        id: 'stagg-amazon',
+        productId: 'fellow-stagg-ekg',
+        retailer: 'amazon',
+        retailerName: 'Amazon',
+        url: 'https://www.amazon.com/dp/B07DTMXND4',
+        trackingId: 'brewelevate-20',
+        displayPrice: '$165',
+        isPrimary: true,
+        isActive: true,
+        clicks: 0,
+        createdAt: '2024-01-01T00:00:00Z',
+        updatedAt: '2024-01-01T00:00:00Z',
+      },
+    ],
+    isFeatured: true,
+    isTopPick: false,
+    tags: ['kettle', 'pour-over', 'precision', 'design'],
+    seo: {
+      title: 'Fellow Stagg EKG Review — Best Electric Kettle for Coffee',
+      description:
+        'The Fellow Stagg EKG is the gold standard for precision kettles. Here\'s whether it lives up to the hype after daily use.',
+    },
+    createdAt: '2024-02-15T00:00:00Z',
+    updatedAt: '2024-11-01T00:00:00Z',
+  },
+
+  {
+    id: 'acaia-pearl',
+    slug: 'acaia-pearl',
+    name: 'Pearl',
+    brand: 'Acaia',
+    category: 'scales',
+    tagline: 'The professional standard for espresso scales',
+    description:
+      'Auto-tare, flow-rate tracking, and a 0.1g resolution that makes dialling in espresso dramatically easier. Used in most specialty cafés.',
+    image: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80',
+    images: [],
+    budgetTier: 'premium',
+    price: '$229',
+    rating: 4.6,
+    reviewCount: 3800,
+    specs: [
+      { label: 'Resolution',    value: '0.1g' },
+      { label: 'Max Load',      value: '2kg' },
+      { label: 'Response Time', value: '20ms' },
+      { label: 'Connectivity',  value: 'Bluetooth (iOS/Android)' },
+      { label: 'Battery',       value: 'USB-C, 5–8 hrs' },
+      { label: 'Timer',         value: 'Auto-start on pour' },
+    ],
+    pros: [
+      '0.1g resolution at espresso doses',
+      'Flow rate display in real time',
+      'Auto-start timer on pour',
+      'Clean minimal design',
+    ],
+    cons: [
+      'Expensive for a scale',
+      'App required for advanced features',
+      'Heat sensitivity near portafilter',
+    ],
+    affiliateLinks: [
+      {
+        id: 'acaia-amazon',
+        productId: 'acaia-pearl',
+        retailer: 'amazon',
+        retailerName: 'Amazon',
+        url: 'https://www.amazon.com/dp/B00W3D4VC0',
+        trackingId: 'brewelevate-20',
+        displayPrice: '$229',
+        isPrimary: true,
+        isActive: true,
+        clicks: 0,
+        createdAt: '2024-01-01T00:00:00Z',
+        updatedAt: '2024-01-01T00:00:00Z',
+      },
+    ],
+    isFeatured: false,
+    isTopPick: false,
+    tags: ['scale', 'espresso', 'precision', 'bluetooth'],
+    seo: {
+      title: 'Acaia Pearl Review — Best Espresso Scale Worth the Price?',
+      description:
+        'The Acaia Pearl is the scale pros use. We test whether the price premium is justified for home baristas.',
+    },
+    createdAt: '2024-03-01T00:00:00Z',
+    updatedAt: '2024-10-01T00:00:00Z',
+  },
+
+  {
+    id: 'niche-zero',
+    slug: 'niche-zero',
+    name: 'Niche Zero',
+    brand: 'Niche',
+    category: 'grinders',
+    tagline: 'The single-dose grinder that changed the game',
+    description:
+      'Zero retention single-dose grinding with 63mm conical burrs. Built for espresso obsessives who want a different coffee every morning.',
+    image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80',
+    images: [],
+    budgetTier: 'luxury',
+    price: '$630',
+    rating: 4.8,
+    reviewCount: 2900,
+    specs: [
+      { label: 'Burrs',         value: '63mm conical (Mazzer)' },
+      { label: 'Retention',     value: '< 0.1g (zero)' },
+      { label: 'Settings',      value: 'Stepless' },
+      { label: 'Dose',          value: 'Single-dose only' },
+      { label: 'RPM',           value: '100 rpm' },
+      { label: 'Origin',        value: 'UK-made' },
+    ],
+    pros: [
+      'Near-zero retention — switch beans daily',
+      'Stepless adjustment for dialling in',
+      'Exceptional grind uniformity',
+      'Beautiful, compact design',
+    ],
+    cons: [
+      'Single-dose workflow only',
+      'Long wait times (made to order)',
+      'Premium price point',
+    ],
+    affiliateLinks: [
+      {
+        id: 'niche-brand',
+        productId: 'niche-zero',
+        retailer: 'brand',
+        retailerName: 'Niche Coffee',
+        url: 'https://www.nichecoffee.co.uk/products/niche-zero',
+        displayPrice: '$630',
+        isPrimary: true,
+        isActive: true,
+        clicks: 0,
+        createdAt: '2024-01-01T00:00:00Z',
+        updatedAt: '2024-01-01T00:00:00Z',
+      },
+    ],
+    isFeatured: false,
+    isTopPick: false,
+    tags: ['grinder', 'single-dose', 'stepless', 'premium'],
+    seo: {
+      title: 'Niche Zero Review — Is It Worth $630 for a Home Grinder?',
+      description:
+        'The Niche Zero is unlike any grinder we\'ve tested. Here\'s who it\'s for and whether it justifies the price.',
+    },
+    createdAt: '2024-03-15T00:00:00Z',
+    updatedAt: '2024-11-01T00:00:00Z',
+  },
+]
+
+export function getProductBySlug(slug: string): Product | undefined {
+  return products.find(p => p.slug === slug)
+}
+
+export function getFeaturedProducts(): Product[] {
+  return products.filter(p => p.isFeatured)
+}
+
+export function getProductsByCategory(category: string): Product[] {
+  return products.filter(p => p.category === category)
+}
