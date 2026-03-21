@@ -20,7 +20,8 @@
     "next-seo": "^6.6.0",
     "sharp": "^0.33.4",
     "date-fns": "^3.6.0",
-    "reading-time": "^1.5.0"
+    "reading-time": "^1.5.0",
+    "@types/reading-time": "^1.5.1"
   },
   "devDependencies": {
     "typescript": "^5.5.3",
