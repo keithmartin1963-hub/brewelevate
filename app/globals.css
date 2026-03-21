@@ -330,7 +330,7 @@
 
   /* ── Prose overrides for content ── */
   .prose-brew {
-    @apply prose prose-lg max-w-none;
+  max-width: none;
     --tw-prose-body:         var(--color-warmgray);
     --tw-prose-headings:     var(--color-charcoal);
     --tw-prose-lead:         var(--color-warmgray);
