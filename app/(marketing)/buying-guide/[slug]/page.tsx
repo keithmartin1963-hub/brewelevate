@@ -47,9 +47,15 @@ export default function BuyingGuidePage({ params }: PageProps) {
     ...(guideProducts.length > 0 ? [buildItemListSchema(
       guide.topPicks.map(tp => {
         const prod = products.find(p => p.id === tp.productId)
-        return { position: tp.rank, name: prod ? `${prod.brand} ${prod.name}` : tp.badge,
-          url: prod ? `/review/${prod.slug}` : `/buying-guide/${guide.slug}`,
-          description: tp.summary, image: prod?.image }
+        return {
+  position: tp.rank,
+  name: prod
+    ? `${prod.brand ?? ''} ${prod.name ?? ''}`.trim()
+    : (tp.badge ?? 'Item'),
+  url: prod ? `/review/${prod.slug}` : `/buying-guide/${guide.slug}`,
+  description: tp.summary ?? '',
+  image: prod?.image ?? ''
+}
       })
     )] : []),
   ]
