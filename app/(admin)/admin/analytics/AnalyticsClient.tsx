@@ -14,7 +14,7 @@ export default function AnalyticsClient() {
 
       {sortedLinks.map(link => (
         <div key={link.id}>
-          {link.name} — {link.clicks}
+          {link.retailerName} - {link.clicks}
         </div>
       ))}
     </div>
