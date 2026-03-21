@@ -15,16 +15,11 @@ const byPosition = [
   { pos: 'Hero CTA',             clicks: 89  },
 ]
 
-export default function AnalyticsPage() {
-  const totalClicks = seedLinks.reduce((s, l) => s + l.clicks, 0)
-  const sortedLinks = [...seedLinks].sort((a, b) => b.clicks - a.clicks)
-  const maxClicks   = Math.max(...seedLinks.map(l => l.clicks))
-  const maxPos      = Math.max(...byPosition.map(p => p.clicks))
+import AnalyticsClient from './AnalyticsClient'
 
-  const retailerClass: Record<string, string> = {
-    amazon: 'bg-amber-50 text-amber-700',
-    brand:  'bg-green-50 text-green-700',
-  }
+export default function AnalyticsPage() {
+  return <AnalyticsClient />
+}
 
   return (
     <div className="max-w-[1100px] space-y-5">
