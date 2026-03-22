@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import AdminClient from './AdminClient'
 
 export const metadata: Metadata = {
-  title: 'Dashboard | BrewElevate Admin',
+  title: 'Admin Dashboard',
 }
 
-export default function AdminPage() {
+export default function Page() {
   return <AdminClient />
 }
